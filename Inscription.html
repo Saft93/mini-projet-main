@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <header>
+        <div class="navi">
+            <nav > <a href="projet.php">Accueil</a></nav>
+            <nav><a href="Inscription.html">Inscription</a></nav>
+            <nav><a href="devis.php">Devis</a></nav>
+        </div>
+    </header>
+    <main>
+      <form action="projet.php" method="post">
+            <div> 
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom">
+            </div>
+            <hr>
+            <div> 
+                <label for="prenom">Prenom :</label>
+                <input type="text" name="prenom" id="prenom">
+            </div>
+            <hr>
+            <div> 
+                <label for="date">Date de naissance :</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <hr>
+            <div> 
+                <label for="tel">Téléphone*</label>
+                <input type="tel" name="tel" id="tel" required>
+            </div>
+            <hr>
+            <div> 
+                <label for="gmail">E-mail*</label>
+                <input type="email" name="gmail" id="gmail" required>
+            </div>
+            <hr>
+            <div> 
+                <label for="password">Mot de passe :*</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <hr>
+            <div>
+                <label for="objet">Formation :</label>
+                <select name="objet" id="objet">
+                <option value="1">EXCEL</option>
+                <option value="2">WORD</option>
+                <option value="3">POWERPOINT</option>
+                <option value="4">ACCES</option>
+              </select>
+            </div>
+            <hr>
+            <div>
+             <label for="contact">Contact</label>
+             <select name="contact" id="contact" multiple>
+                <option value="telephone">Téléphone</option>
+                <option value="mail">Mail</option>
+                <option value="courrier">Courrier</option>
+              </select>
+            </div>
+            <div>
+              <input type="submit" value="S'inscrire">
+            </div>
+       </form>
+    </main>
+</body>
+</html>
